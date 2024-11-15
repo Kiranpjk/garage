@@ -1,0 +1,95 @@
+/* styles.css */
+
+/* Navbar Customization */
+.navbar {
+  background-color: #4f46e5;
+  position:
+}
+
+.navbar a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #3730a3;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+}
+
+/* Mobile navbar styles */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar a {
+    padding: 12px 16px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* About Section Styling */
+#about {
+  background: linear-gradient(135deg, #7dd3fc, #9333ea);
+  padding: 60px 30px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* Hero section background animation */
+.bg-gradient {
+  background: linear-gradient(90deg, #4f46e5, #7dd3fc);
+  background-size: 200% 200%;
+  animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 200% 0;
+  }
+
+  50% {
+    background-position: 0 100%;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
